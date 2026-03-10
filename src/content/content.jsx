@@ -10,7 +10,7 @@ import aboutImg from "../assets/imgs/about/aboutImg.webp";
 // import team2 from '../assets/imgs/team/team2.webp'
 // import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
-import imgSteps from "../assets/imgs/steps/imgSteps.webp";
+// import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 
 import {
   Baby,
@@ -505,39 +505,39 @@ const content = {
     //     },
     //   },
     // },
-    steps: {
-      miniTag: "A_Definir",
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span></span>,
+    // steps: {
+    //   miniTag: "A_Definir",
+    //   FirstPart: <span> A_Definir </span>,
+    //   Destaque: <span className="italic font-light"> A_Definir</span>,
+    //   SecondPart: <span></span>,
 
-      subtitle: "A_Definir",
-      img: imgSteps,
-      alt: "Imagem ilustrativa da Seção Passo a Passo",
-      cards: {
-        card1: {
-          stepNumber: 1,
-          cardTitle: "A_Definir",
-          cardDescription: "A_Definir",
-        },
-        card2: {
-          stepNumber: 2,
-          cardTitle: "A_Definir",
-          cardDescription: "A_Definir",
-        },
-        card3: {
-          stepNumber: 3,
-          cardTitle: "A_Definir",
-          cardDescription: "A_Definir",
-        },
-        card4: {
-          stepNumber: 4,
-          cardTitle: "A_Definir",
-          cardDescription: "A_Definir",
-        },
-      },
-      ctaButtonText: "A_Definir",
-    },
+    //   subtitle: "A_Definir",
+    //   img: imgSteps,
+    //   alt: "Imagem ilustrativa da Seção Passo a Passo",
+    //   cards: {
+    //     card1: {
+    //       stepNumber: 1,
+    //       cardTitle: "A_Definir",
+    //       cardDescription: "A_Definir",
+    //     },
+    //     card2: {
+    //       stepNumber: 2,
+    //       cardTitle: "A_Definir",
+    //       cardDescription: "A_Definir",
+    //     },
+    //     card3: {
+    //       stepNumber: 3,
+    //       cardTitle: "A_Definir",
+    //       cardDescription: "A_Definir",
+    //     },
+    //     card4: {
+    //       stepNumber: 4,
+    //       cardTitle: "A_Definir",
+    //       cardDescription: "A_Definir",
+    //     },
+    //   },
+    //   ctaButtonText: "A_Definir",
+    // },
     ctaSecondary: {
       miniTag: "FALE CONOSCO",
       title: <h1>Fale agora com uma Advogada</h1>,
@@ -604,7 +604,6 @@ const content = {
       miniTag: "BLOG",
       title: "A_Definir",
       subtitle: "",
-      img: imgSteps,
       labelCards: "Ver mais",
       label: "Clique aqui para ver todas as matérias",
       blogLink: "A_Definir", //sem "https://"
