@@ -617,24 +617,58 @@ const content = {
         question1: {
           question:
             "Preciso mesmo de advogado para resolver questões de família?",
-          answer:
-            "Em muitos casos, sim. Questões como guarda dos filhos, pensão alimentícia, visitas ou divisão de bens precisam ser definidas de forma correta para evitar conflitos futuros. Com orientação jurídica adequada, você entende seus direitos e consegue tomar decisões mais seguras, protegendo você e sua família.",
+          answer: (
+            <>
+              Em muitos casos, sim. Questões como guarda dos filhos, pensão
+              alimentícia, visitas ou divisão de bens precisam ser definidas de
+              forma correta para evitar conflitos futuros.
+              <br /> Com orientação jurídica adequada, você entende seus
+              direitos e consegue tomar decisões mais seguras, protegendo você e
+              sua família.
+            </>
+          ),
         },
         question2: {
           question:
             "Quanto tempo demora para resolver um caso de Direito de Família?",
-          answer:
-            "O tempo pode variar dependendo do tipo de situação e se existe acordo entre as partes. Quando há consenso, muitos casos podem ser resolvidos de forma mais rápida. Já quando há conflito, pode ser necessário seguir etapas legais para garantir uma solução justa e segura. Durante o atendimento, analisamos seu caso e explicamos os possíveis caminhos.",
+          answer: (
+            <>
+              O tempo pode variar dependendo do tipo de situação e se existe
+              acordo entre as partes.
+              <br />
+              Quando há consenso, muitos casos podem ser resolvidos de forma
+              mais rápida. Já quando há conflito, pode ser necessário seguir
+              etapas legais para garantir uma solução justa e segura.
+              <br />
+              Durante o atendimento, analisamos seu caso e explicamos os
+              possíveis caminhos.
+            </>
+          ),
         },
         question3: {
           question: "É possível resolver tudo de forma online?",
-          answer:
-            "Sim. Muitos atendimentos e orientações podem ser realizados online, o que facilita para quem tem rotina corrida ou mora em outra cidade. Sempre que a lei permitir, o processo pode seguir com praticidade e acompanhamento direto da advogada.",
+          answer: (
+            <>
+              Sim. Muitos atendimentos e orientações podem ser realizados
+              online, o que facilita para quem tem rotina corrida ou mora em
+              outra cidade.
+              <br />
+              Sempre que a lei permitir, o processo pode seguir com praticidade
+              e acompanhamento direto da advogada.
+            </>
+          ),
         },
         question4: {
           question: "Como funciona o primeiro atendimento?",
-          answer:
-            "No primeiro contato você poderá explicar sua situação e receber orientação inicial sobre seus direitos e as possíveis soluções jurídicas. A partir disso, será possível entender quais são os próximos passos para resolver sua situação familiar com segurança.",
+          answer: (
+            <>
+              No primeiro contato você poderá explicar sua situação e receber
+              orientação inicial sobre seus direitos e as possíveis soluções
+              jurídicas.
+              <br /> A partir disso, será possível entender quais são os
+              próximos passos para resolver sua situação familiar com segurança.
+            </>
+          ),
         },
       },
 
