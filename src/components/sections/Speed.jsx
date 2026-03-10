@@ -1,7 +1,7 @@
 import React from "react";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionWrapper from "../sectionElements/SectionWrapper";
-import { Clock, Gavel, ShieldCheck } from "lucide-react";
+import { Check, Clock, Gavel, ShieldCheck } from "lucide-react";
 import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
@@ -34,7 +34,7 @@ function Speed({ colorMode }) {
         <section className="">
           <SectionHeaderNovo
             miniTitle="Rapidez e Praticidade"
-            title="Dependendo do caso, o divórcio pode ser resolvido:"
+            title="Dependendo do caso, questões de família podem ser resolvidas:"
             colorMode={colorMode}
           />
           <MotionDivDownToUp>
@@ -45,13 +45,13 @@ function Speed({ colorMode }) {
               <div className="grid md:grid-cols-3 gap-8">
                 {[
                   {
-                    text: "Em poucos dias, conforme o tipo de divórcio",
-                    icon: Clock,
+                    text: "Com orientação jurídica desde o início",
+                    icon: Check,
                   },
-                  { text: "Sem audiência, na maioria dos casos", icon: Gavel },
+                  { text: "Sem audiência em muitos casos", icon: Check },
                   {
-                    text: "Sem necessidade de comparecimento presencial",
-                    icon: ShieldCheck,
+                    text: "Com atendimento online, quando possível",
+                    icon: Check,
                   },
                 ].map((item, idx) => (
                   <MotionDivDownToUp>
@@ -76,7 +76,8 @@ function Speed({ colorMode }) {
                 <p
                   className={`text-title2 font-medium font-secondFont inline-block px-4 py-1.5 rounded-full text-black/70`}
                 >
-                  Tudo conforme a lei.
+                  Tudo conduzido de acordo com a lei e com segurança
+                  jurídica.{" "}
                 </p>
               </div>
             </div>

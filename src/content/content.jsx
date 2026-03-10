@@ -33,6 +33,8 @@ import {
   ShoppingCart,
   Building,
   BriefcaseBusiness,
+  SearchCheck,
+  ChartPie,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -43,7 +45,7 @@ export const infos = {
   name: "Castro Advogados Associados",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "divorcio-urgente-castro.escritorioespecializado.adv.br", // Sem "www"
+  domain: "familia-adv-castro.escritorioespecializado.adv.br", // Sem "www"
   phone: {
     ddd: "66",
     firstPart: "99248", // Apenas os 5 primeiros números (incluindo o 9)
@@ -122,17 +124,16 @@ const content = {
       ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: "ADVOGADO PARA ENTRAR COM DIVÓRCIO URGENTE",
-      FirstPart: <span>Chega de sofrer: Resolva seu Divórcio </span>,
+      miniTag: "DIREITO DE FAMÍLIA",
+      FirstPart: <span>Resolva conflitos </span>,
       Destaque: (
-        <span className="relative italic font-light destaque">URGENTE</span>
+        <span className="relative italic font-light destaque">familiares</span>
       ),
-      SecondPart: <span></span>,
+      SecondPart: <span>com segurança</span>,
       subtitle: (
         <p>
-          Cada dia que você esperar a situação só vai piorar. Resolva seu
-          divórcio rápido com orientação de Advogado Especialista no assunto,
-          tudo pela internet e sem burocracia desnecessária.
+          Receba orientação de um advogado de família e saiba como agir em
+          guarda, pensão e visitas.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -141,13 +142,13 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: "Falar com Advogado agora no WhatsApp",
+      ctaButtonText: "Falar com a Advogada agora",
       ctaButtonTextSecondary: "A_Definir",
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: "Foco em fazer o melhor acordo para você não sair perdendo.",
-        textTwo: "Atendimento imediato, sem enrolação.",
+        text: "Atendimento direto com advogado especializado em Direito de Família.",
+        textTwo: "",
       },
       secondaryCta: "Contato",
       images: {
@@ -171,50 +172,85 @@ const content = {
     },
     important: {
       miniTag: "ATENÇÃO",
-      title: <>O que você precisa sobre divórcio online</>,
+      title: <>O que você precisa saber sobre direito de família</>,
       cards: {
         card1: {
           title: (
-            <>O que pode acontecer se eu demorar para entrar com o divórcio?</>
+            <>
+              Como funciona a guarda dos filhos quando os pais não entram em
+              acordo?
+            </>
           ),
           paragraph: (
             <>
-              Seu cônjuge pode movimentar ou ocultar patrimônio antes da divisão
-              de bens. Sem orientação jurídica, isso pode dificultar a
-              recuperação do que seria seu por direito.
+              Quando não existe acordo entre os pais, a guarda precisa ser
+              definida judicialmente para garantir estabilidade e segurança para
+              a criança.
+              <br />
+              Sem uma definição clara, surgem conflitos sobre decisões
+              importantes, rotina e convivência.
+              <br />
+              <br />
+              Com orientação jurídica, é possível organizar a guarda de forma
+              equilibrada e dentro da lei, sempre priorizando o bem-estar dos
+              filhos.
             </>
           ),
         },
         card2: {
-          title: <>Meu cônjuge pode fazer dívidas antes do divórcio?</>,
+          title: <>Como é definido o valor da pensão alimentícia?</>,
           paragraph: (
             <>
-              Dependendo do caso, dívidas feitas durante o casamento podem gerar
-              problemas financeiros no momento da separação. Quanto antes buscar
-              orientação jurídica, maiores são as chances de evitar prejuízos.
+              A pensão não tem um valor fixo. Ela é definida considerando as
+              necessidades da criança e a capacidade financeira de quem paga.
+              <br />
+              <br />
+              Cada caso precisa ser analisado com cuidado para evitar valores
+              injustos ou acordos que geram problemas no futuro. <br />
+              <br />A orientação jurídica garante que a pensão seja definida de
+              forma correta e segura.
             </>
           ),
         },
         card3: {
-          title: (
-            <>E se meu cônjuge começar a tomar decisões sobre os filhos?</>
-          ),
+          title: <>Como funciona a divisão de bens quando o casal se separa?</>,
           paragraph: (
             <>
-              Sem um acordo ou decisão judicial, conflitos sobre guarda, visitas
-              e pensão podem aumentar. Ter orientação jurídica desde o início
-              ajuda a proteger o bem-estar dos filhos e evitar decisões
-              precipitadas.
+              A divisão de bens depende do tipo de relacionamento e do regime
+              adotado durante a união.
+              <br />
+              <br />
+              Imóveis, veículos, investimentos e outros patrimônios podem
+              precisar ser analisados para garantir uma partilha justa.
+              <br />
+              <br />
+              Sem orientação jurídica, é comum que uma das partes saia
+              prejudicada ou que o acordo gere problemas futuros.
+              <br />
+              <br />
+              Um advogado analisa toda a situação para garantir que seus
+              direitos sejam respeitados.
             </>
           ),
         },
         card4: {
-          title: <>Esperar pode tornar o divórcio mais difícil?</>,
+          title: (
+            <>Vale a pena fazer acordo direto ou é melhor procurar advogado?</>
+          ),
           paragraph: (
             <>
-              Sim. Quanto mais o tempo passa, maiores podem ser os conflitos, o
-              desgaste emocional e a dificuldade de chegar a um acordo justo
-              entre as partes.
+              Muitas pessoas tentam resolver tudo apenas com acordos informais,
+              mas isso pode gerar conflitos e insegurança jurídica no futuro.
+              <br />
+              <br />
+              Sem uma orientação adequada, é comum que detalhes importantes não
+              sejam considerados, principalmente em questões de filhos, pensão
+              ou divisão de bens.
+              <br />
+              <br />
+              Com acompanhamento jurídico, o acordo pode ser feito de forma
+              segura, evitando problemas e protegendo os direitos de todos os
+              envolvidos.
             </>
           ),
         },
@@ -225,37 +261,20 @@ const content = {
       ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
     },
     features: {
-      miniTag: "Tempo é decisivo no divórcio",
-      FirstPart: <span>Adiar o divórcio pode </span>,
-      Destaque: <span className="italic font-light"> trazer</span>,
-      SecondPart: <span> prejuízos</span>,
-      subtitle:
-        "Quando o divórcio demora para ser resolvido, conflitos podem aumentar e decisões importantes podem acontecer sem proteção jurídica. Buscar orientação no momento certo ajuda a proteger seus direitos e evitar problemas maiores.",
+      miniTag: "ÁREAS DE ATUAÇÃO",
+      FirstPart: <span></span>,
+      Destaque: <span className="italic font-light"> Soluções</span>,
+      SecondPart: <span> em Direito de Família</span>,
+      subtitle: "Atuação em casos de guarda, pensão, visitas e divisão de bens",
       imgFeatures: imgFeatures,
       alt: "imagem representativa da Seção Serviços",
       titleMessageFeature: "100%",
-      subtitleMessageFeature: "orientação profissional",
+      subtitleMessageFeature: "Direito de Família",
       cards: {
         card1: {
-          title: "Divórcio extrajudicial",
+          title: "Guarda dos filhos",
           subtitle:
-            "Resolvido em cartório, de forma rápida e sem processo judicial.",
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <FileText />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-        card2: {
-          title: "Divórcio consensual",
-          subtitle:
-            "Quando há acordo entre as partes, o divórcio acontece de forma simples e menos desgastante.",
+            "Definição e regularização da guarda com segurança jurídica.",
           description: (
             <div>
               A_Definir
@@ -268,13 +287,58 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
-        card3: {
-          title: "Divórcio judicial",
+        card2: {
+          title: "Pensão alimentícia",
           subtitle:
-            "Indicado quando não há acordo, com acompanhamento jurídico para proteger seus direitos.",
+            "Definição justa da pensão para garantir direitos dos filhos.",
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <ShoppingCart />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+        card3: {
+          title: "Revisão de pensão",
+          subtitle: "Atualização do valor da pensão conforme a realidade.",
           description: (
             <div>
               A_Definir <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <SearchCheck />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+        card4: {
+          title: "Regulamentar visitas",
+          subtitle: "Organização legal da convivência entre pais e filhos.",
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
+          ),
+          icon: <FileText />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+        card5: {
+          title: "União estável",
+          subtitle: "Reconhecimento ou dissolução com definição de direitos.",
+          description: (
+            <div>
+              A_Definir
+              <br />
               <br />
               A_Definir
             </div>
@@ -283,42 +347,9 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
-        card4: {
-          title: "Divórcio com ou sem filhos",
-          subtitle:
-            "Orientação completa, com atenção especial às questões que envolvem filhos e responsabilidades.",
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <User />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-        card5: {
-          title: "Divórcio com partilha de bens",
-          subtitle:
-            "Análise e divisão justa dos bens, garantindo segurança em cada etapa do processo.",
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Wallet />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
         card6: {
-          title: "Divórcio sem partilha imediata",
-          subtitle:
-            "Possibilidade de se divorciar agora e resolver a partilha em um momento posterior.",
+          title: "Partilha de bens",
+          subtitle: "Divisão correta do patrimônio construído na relação.",
           description: (
             <div>
               A_Definir
@@ -327,12 +358,12 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Clock />,
+          icon: <ChartPie />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
       },
-
+      ctaButtonText: "Falar com a Advogada",
       moreFeatures: {
         card1: {
           ico: "A_Definir",
@@ -350,7 +381,6 @@ const content = {
           subtitle: "A_Definir",
         },
       },
-      ctaButtonText: "Falar com Advogada",
     },
     emergency: {
       minitag: "A_Definir",
@@ -396,7 +426,8 @@ const content = {
                 {" "}
                 <Check />
               </span>{" "}
-              Experiência em divórcios online
+              Experiência em conflitos familiares e questões envolvendo
+              filhos{" "}
             </li>
             <li className="flex gap-2 font-secondFont">
               <span>
@@ -410,7 +441,7 @@ const content = {
                 {" "}
                 <Check />
               </span>{" "}
-              Transparência em todas as etapas
+              Orientação clara e transparência em todas as etapas
             </li>
           </ul>
         </div>
@@ -431,7 +462,7 @@ const content = {
       paragraphModalCta: "Entre em contato",
       titleModal: "A_Definir",
       ctaButtonAriaLabel: "Botão para entrar em contato",
-      ctaButtonText: "Falar diretamente com as Advogadas",
+      ctaButtonText: "Falar diretamente com a Advogada",
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -513,8 +544,8 @@ const content = {
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Se você está pensando em se divorciar ou precisa de orientação, fale
-            conosco agora.
+            Se você precisa de orientação sobre guarda, pensão, visitas ou
+            conflitos familiares, fale conosco agora.
           </p>
         </div>
       ),
@@ -525,14 +556,14 @@ const content = {
             <span className="p-1 border-2 rounded-full">
               <Check className="" width={17} height={17} />
             </span>{" "}
-            Análise gratuita do seu caso
+            Orientação inicial para entender seu caso
           </div>
           <div className="flex items-start gap-2 mx-auto">
             {" "}
             <span className="p-1 border-2 rounded-full">
               <Check className="" width={17} height={17} />
             </span>{" "}
-            Atendimento direto com a Advogada, sem intermediários
+            Atendimento direto com a advogada, sem intermediários
           </div>
           <div className="flex items-start gap-2 mx-auto">
             {" "}
@@ -546,14 +577,14 @@ const content = {
             <span className="p-1 border-2 rounded-full">
               <Check className="" width={17} height={17} />
             </span>{" "}
-            Processo iniciado no mesmo dia da análise
+            Explicação clara sobre seus direitos e próximos passos
           </div>
           <div className="flex items-start gap-2 mx-auto">
             {" "}
             <span className="p-1 border-2 rounded-full">
               <Check className="" width={17} height={17} />
             </span>{" "}
-            Você mais perto de resolver seu problema, sem sair de casa
+            Mais segurança para resolver sua situação familiar
           </div>
         </div>
       ),
@@ -565,7 +596,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="my-3 text-title5 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: "Quero iniciar meu divórcio agora",
+      ctaButtonText: "Quero falar com a Advogada",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
@@ -584,24 +615,26 @@ const content = {
       subtitle: "Confira as perguntas abaixo para esclarecer suas dúvidas. ",
       questions: {
         question1: {
-          question: "Como posso contratar seus serviços?",
+          question:
+            "Preciso mesmo de advogado para resolver questões de família?",
           answer:
-            "Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.",
+            "Em muitos casos, sim. Questões como guarda dos filhos, pensão alimentícia, visitas ou divisão de bens precisam ser definidas de forma correta para evitar conflitos futuros. Com orientação jurídica adequada, você entende seus direitos e consegue tomar decisões mais seguras, protegendo você e sua família.",
         },
         question2: {
-          question: "Qual é o prazo médio para resolução de um caso?",
+          question:
+            "Quanto tempo demora para resolver um caso de Direito de Família?",
           answer:
-            "O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.",
+            "O tempo pode variar dependendo do tipo de situação e se existe acordo entre as partes. Quando há consenso, muitos casos podem ser resolvidos de forma mais rápida. Já quando há conflito, pode ser necessário seguir etapas legais para garantir uma solução justa e segura. Durante o atendimento, analisamos seu caso e explicamos os possíveis caminhos.",
         },
         question3: {
-          question: "Quais documentos devo levar para a consulta?",
+          question: "É possível resolver tudo de forma online?",
           answer:
-            "Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.",
+            "Sim. Muitos atendimentos e orientações podem ser realizados online, o que facilita para quem tem rotina corrida ou mora em outra cidade. Sempre que a lei permitir, o processo pode seguir com praticidade e acompanhamento direto da advogada.",
         },
         question4: {
-          question: "Vocês oferecem serviços de consultoria preventiva?",
+          question: "Como funciona o primeiro atendimento?",
           answer:
-            "Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.",
+            "No primeiro contato você poderá explicar sua situação e receber orientação inicial sobre seus direitos e as possíveis soluções jurídicas. A partir disso, será possível entender quais são os próximos passos para resolver sua situação familiar com segurança.",
         },
       },
 
