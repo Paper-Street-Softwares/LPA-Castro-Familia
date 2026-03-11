@@ -304,8 +304,8 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
         card3: {
-          title: "Revisão de pensão",
-          subtitle: "Atualização do valor da pensão conforme a realidade.",
+          title: "Divórcio",
+          subtitle: "Separação legal com orientação e segurança jurídica.",
           description: (
             <div>
               A_Definir <br />
@@ -313,7 +313,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <SearchCheck />,
+          icon: <Gavel />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
